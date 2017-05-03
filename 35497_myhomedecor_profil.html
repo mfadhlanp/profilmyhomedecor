@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="rating.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display:none}
+</style>
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+	<div class="w3-bar-block">
+	<a class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-home"> My Home Decor</i></a>
+	<br>
+	<br>
+  </div>
+      <p><i class="fa fa-id-card"></i>  Designer: Shinta Ratnasari</p>
+	  <br>
+	  <p><i class="fa fa-map-marker"></i>  Domisili: Serang, Banten</p>
+	  <br>
+	  <div class="stars">
+	  <form action="">
+		<input class="star star-5" id="star-5" type="radio" name="star"/>
+		<label class="star star-5" for="star-5"></label>
+		<input class="star star-4" id="star-4" type="radio" name="star"/>
+		<label class="star star-4" for="star-4"></label>
+		<input class="star star-3" id="star-3" type="radio" name="star"/>
+		<label class="star star-3" for="star-3"></label>
+		<input class="star star-2" id="star-2" type="radio" name="star"/>
+		<label class="star star-2" for="star-2"></label>
+		<input class="star star-1" id="star-1" type="radio" name="star"/>
+		<label class="star star-1" for="star-1"></label>
+	  </form>
+	  </div>
+	  <br>
+	  <p><i class="fa fa-male"></i>  My Client: 18</p>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <span class="w3-bar-item">Rental</span>
+  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+
+  <!-- Slideshow Header -->
+  
+  <div class="w3-container" id="apartment">
+    <h2 class="w3-text-green">Portofolioku</h2>
+    <div class="w3-display-container mySlides">
+    <img src="http://1.bp.blogspot.com/-F0jv21Z-L7M/VCAqreY6nRI/AAAAAAAAKE4/GNDnz9bHMo4/s1600/Desain%2BKamar%2BTidur%2BAnak%2BMuda1.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-left w3-container w3-light-grey" style="opacity: 0.5">
+        <p><h4><b>Kamar tidur</b></h4></p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="http://desaindesainrumah.com/wp-content/uploads/2013/09/Desain-Dapur-modern-Prioritaskan-Efisiensi-dan-Efektivitas-Opened-Modern-Kitchen-Design.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-left w3-container w3-light-grey" style="opacity: 0.5">
+        <p><h4><b>Dapur</b></h4></p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="http://rumahm.com/wp-content/uploads/2015/02/Ide-Desain-Motif-Keramik-Kamar-Mandi-Minimalis-Bersih-Nyaman.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-left w3-container w3-light-grey" style="opacity: 0.5">
+        <p><h4><b>Kamar mandi</b></h4></p>
+    </div>
+	</div>
+    <div class="w3-display-container mySlides">
+    <img src="http://berlinhappens.com/wp-content/uploads/2015/12/desain-ruang-tamu-ala-jepang.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-left w3-container w3-light-grey" style="opacity: 0.5">
+        <p><h4><b>Ruang tamu</b></h4></p>
+    </div>
+	</div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="http://1.bp.blogspot.com/-F0jv21Z-L7M/VCAqreY6nRI/AAAAAAAAKE4/GNDnz9bHMo4/s1600/Desain%2BKamar%2BTidur%2BAnak%2BMuda1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Kamar anak kembar">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="http://desaindesainrumah.com/wp-content/uploads/2013/09/Desain-Dapur-modern-Prioritaskan-Efisiensi-dan-Efektivitas-Opened-Modern-Kitchen-Design.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dapur modern">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="http://rumahm.com/wp-content/uploads/2015/02/Ide-Desain-Motif-Keramik-Kamar-Mandi-Minimalis-Bersih-Nyaman.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Kamar mandi nyaman">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="http://berlinhappens.com/wp-content/uploads/2015/12/desain-ruang-tamu-ala-jepang.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Ruang tamu lesehan">
+    </div>
+  </div>
+
+    <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Biografi Designer -->
+  
+  <div class="w3-container" id="contact">
+    <h2>Biografi Singkat</h2>
+	<p>Saya adalah seorang designer profesional yang telah terjun di bidang ini selama lebih dari 15 tahun.
+		Saya juga pernah dinobatkan sebagi Designer of The Year oleh majalah nasional Interior Idaman pada tahun 2013.</p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact">
+    <h2>Kontak</h2>
+    <i class="fa fa-phone" style="width:30px"></i> Telpon: +62816000000<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: shinta.ratnasari@mail.com<br>
+  </div>
+
+<!-- End page content -->
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<script>
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
